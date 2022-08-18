@@ -1,6 +1,11 @@
 //Business Logic
 function validateLength(input){
-  return input.length;
+  console.log (input.length);
+  if (input.length >=15) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function validateNumber(input){
