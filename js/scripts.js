@@ -11,7 +11,9 @@ function validateLength(input){
 }
 
 function validateNumber(input){
+  const inputArray = input.split("");
 
+  console.log(inputArray[0]);
 }
 
 
