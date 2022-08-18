@@ -11,10 +11,33 @@ function validateLength(input){
 }
 
 function validateNumber(input){
-  const inputArray = input.split("");
-
+  const inputArray = input.split(""); 
   console.log(inputArray[0]);
+  if (inputArray[0] === "4") {
+    return "visa";
+  } else if (inputArray[0] === "5") {
+    return "mastercard";
+  } else if (inputArray[0] === "6") {
+    return "discover"
+  } else if (inputArray[0] === "3") {
+    return "amex"
+  } else {
+  return null;
+  }
 }
+  //if the first number is 4 5 or 6
+    //then if it's 4
+      //it's visa
+    //else if it's 5
+      //it's mc
+    //else (if it's 6, implicit)
+      //it's discover
+  //else if it's 3
+    //check if it's 36 or 37
+      //if it is, it's amex
+    //otherwise it's invalid
+
+
 
 
 
