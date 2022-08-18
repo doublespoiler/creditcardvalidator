@@ -24,6 +24,23 @@ Validate the length
     4
     False
 
+  Test: It will return true if the number is 15 or 16 in length, false otherwise.
+  Code: 
+    const input = "123456789012345"
+    validateLength(input);
+    const input2 = "1234"
+    validateLength(input2);
+    const input3 = "12345678901234567"
+    validateInput(input3);
+  Expected Result:
+      15
+      True 
+      4
+      False
+      17
+      False
+
+
 Describe validateNumber()
 
 
