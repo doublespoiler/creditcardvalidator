@@ -1,10 +1,12 @@
 //Business Logic
 function validateLength(input){
   console.log (input.length);
-  if (input.length >= 15 && input.length <= 16) {
-    return true;
+  if (input.length === 16) {
+    return "visa,mc,discover";
+  } else if (input.length === 15){  
+    return "amex";
   } else {
-    return false;
+    return null;
   }
 }
 

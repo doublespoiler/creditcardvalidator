@@ -40,7 +40,26 @@ Validate the length
       17
       False
 
+  Test: It will return type of card based off length of number 15 for amex, 16 for visa/discover/mc, and NULL if the number is invalid
+  Code:  
+    const input = "123456789012345"
+    validateLength(input);
+    const input2 = "1234"
+    validateLength(input2);
+    const input3 = "1234567890123456"
+    validateLength(input3);
+  Expected Result: 
+      15
+      amex
+      4
+      null
+      16
+      visa,mc,discover
+      
 
+
+
+      
 Describe validateNumber()
 
 
